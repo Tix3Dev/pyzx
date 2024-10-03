@@ -16,8 +16,8 @@
 
 
 from typing import Any, Dict, Iterable, List, Optional, Union
-from pyzx.circuit import Circuit, Gate, gate_types, CNOT
-from pyzx.linalg import Z2, Mat2, MatLike
+from my_pyzx.circuit import Circuit, Gate, gate_types, CNOT
+from my_pyzx.linalg import Z2, Mat2, MatLike
 
 import numpy as np
 

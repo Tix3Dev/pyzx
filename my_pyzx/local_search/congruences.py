@@ -30,7 +30,7 @@ from ..rules import apply_rule, lcomp
 import sys
 if __name__ == '__main__':
     sys.path.append('..')
-from pyzx.utils import VertexType, EdgeType
+from my_pyzx.utils import VertexType, EdgeType
 
 ### Utilities
 def toggle_edge(g, v1, v2):

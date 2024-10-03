@@ -25,15 +25,15 @@ if __name__ == "__main__":
     sys.path.append(".")
 import numpy as np
 
-from pyzx.linalg import Mat2, MatLike
-from pyzx.routing.cnot_mapper import (
+from my_pyzx.linalg import Mat2, MatLike
+from my_pyzx.routing.cnot_mapper import (
     CostMetric,
     gauss,
     ElimMode,
     FitnessFunction,
     sequential_gauss,
 )
-from pyzx.routing.architecture import (
+from my_pyzx.routing.architecture import (
     Architecture,
     architectures,
     dynamic_size_architectures,
@@ -43,12 +43,12 @@ from pyzx.routing.architecture import (
     FULLY_CONNECTED,
     IBMQ_SINGAPORE,
 )
-from pyzx.routing.parity_maps import CNOT_tracker
-from pyzx.routing.machine_learning import GeneticAlgorithm
-from pyzx.circuit import CNOT
-from pyzx.extract import permutation_as_swaps
-from pyzx.generate import build_random_parity_map
-from pyzx.routing.steiner import steiner_gauss
+from my_pyzx.routing.parity_maps import CNOT_tracker
+from my_pyzx.routing.machine_learning import GeneticAlgorithm
+from my_pyzx.circuit import CNOT
+from my_pyzx.extract import permutation_as_swaps
+from my_pyzx.generate import build_random_parity_map
+from my_pyzx.routing.steiner import steiner_gauss
 
 SEED = 42
 

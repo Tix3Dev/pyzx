@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-import pyzx as zx
+import my_pyzx as zx
 import os
 import time
 import multiprocessing as mp

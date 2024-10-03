@@ -32,9 +32,9 @@ from .congruences import apply_rand_lc, apply_rand_pivot
 import sys
 if __name__ == '__main__':
     sys.path.append('..')
-from pyzx.simplify import to_graph_like, full_reduce
-from pyzx.extract import extract_circuit
-from pyzx.optimize import basic_optimization
+from my_pyzx.simplify import to_graph_like, full_reduce
+from my_pyzx.extract import extract_circuit
+from my_pyzx.optimize import basic_optimization
 
 
 __all__ = ['GeneticOptimizer']

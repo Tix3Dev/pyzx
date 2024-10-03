@@ -229,6 +229,24 @@ def spider(g: BaseGraph[VT,ET], matches: List[MatchSpiderType[VT]]) -> RewriteOu
         # always delete the second vertex in the match
         rem_verts.append(v1)
 
+        # MY ADDITION: add all new key/values from v1 to v0, however currently
+        # if both have the same key, then just the one from v0 is preserved
+        v0_vdata_keys = g.vdata_keys(v0)
+        v1_vdata_keys = g.vdata_keys(v1)
+
+        new_vdata_dict = {key: g.vdata(v0, key) for key in v0_vdata_keys}
+
+        for key in v1_vdata_keys:
+            if key in new_vdata_dict:
+                # TODO: could raise special error
+                # print("Error could be raised here")
+                continue
+            else:
+                new_vdata_dict[key] = g.vdata(v1, key)
+
+        for key, val in new_vdata_dict.items():
+            g.set_vdata(v0, key, val)
+
         # edges from the second vertex are transferred to the first
         for e in g.incident_edges(v1):
             source, target = g.edge_st(e)

@@ -24,16 +24,16 @@ from typing import Optional
 if __name__ == '__main__':
     sys.path.append('..')
     sys.path.append('.')
-from pyzx.circuit import Circuit
-from pyzx.circuit.gates import CNOT
-from pyzx.generate import cliffordT
-from pyzx.simplify import clifford_simp
-from pyzx.extract import extract_circuit
+from my_pyzx.circuit import Circuit
+from my_pyzx.circuit.gates import CNOT
+from my_pyzx.generate import cliffordT
+from my_pyzx.simplify import clifford_simp
+from my_pyzx.extract import extract_circuit
 
 np: Optional[ModuleType]
 try:
     import numpy as np
-    from pyzx.tensor import tensorfy, compare_tensors
+    from my_pyzx.tensor import tensorfy, compare_tensors
 except ImportError:
     np = None
 

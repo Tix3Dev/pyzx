@@ -24,15 +24,15 @@ from typing import Optional
 if __name__ == '__main__':
     sys.path.append('..')
     sys.path.append('.')
-from pyzx.graph import Graph
-from pyzx.graph.multigraph import Multigraph
-from pyzx.generate import cliffords
-from pyzx.circuit import Circuit
+from my_pyzx.graph import Graph
+from my_pyzx.graph.multigraph import Multigraph
+from my_pyzx.generate import cliffords
+from my_pyzx.circuit import Circuit
 
 np: Optional[ModuleType]
 try:
     import numpy as np
-    from pyzx.tensor import tensorfy, compare_tensors, compose_tensors, adjoint
+    from my_pyzx.tensor import tensorfy, compare_tensors, compose_tensors, adjoint
 except ImportError:
     np = None
 

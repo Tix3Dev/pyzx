@@ -21,7 +21,7 @@ import sys
 from typing import Any, Dict, Iterator, List, Set, Tuple, Optional, Union
 from typing_extensions import Literal
 
-from pyzx.graph.base import BaseGraph
+from my_pyzx.graph.base import BaseGraph
 if __name__ == '__main__':
     sys.path.append('..')
 from ..graph.graph import Graph

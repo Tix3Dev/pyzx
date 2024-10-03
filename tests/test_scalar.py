@@ -18,7 +18,7 @@ import unittest
 import sys
 import numpy as np
 from fractions import Fraction
-from pyzx.graph.scalar import Scalar
+from my_pyzx.graph.scalar import Scalar
 
 if __name__ == '__main__':
     sys.path.append('..')

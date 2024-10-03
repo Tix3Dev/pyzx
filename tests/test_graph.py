@@ -24,13 +24,13 @@ if __name__ == '__main__':
     sys.path.append('..')
     sys.path.append('.')
 
-from pyzx.graph import Graph
-from pyzx.utils import EdgeType, VertexType
-from pyzx.generate import identity
+from my_pyzx.graph import Graph
+from my_pyzx.utils import EdgeType, VertexType
+from my_pyzx.generate import identity
 
 import numpy as np
-from pyzx.tensor import compare_tensors
-from pyzx.graph.scalar import Scalar
+from my_pyzx.tensor import compare_tensors
+from my_pyzx.graph.scalar import Scalar
 
 
 

@@ -23,16 +23,16 @@ from typing import Optional
 if __name__ == '__main__':
     sys.path.append('..')
     sys.path.append('.')
-from pyzx.circuit import Circuit
-from pyzx.graph import Graph, EdgeType, Scalar
-from pyzx.simulate import (
+from my_pyzx.circuit import Circuit
+from my_pyzx.graph import Graph, EdgeType, Scalar
+from my_pyzx.simulate import (
     replace_magic_states,
     cut_vertex,
     cut_edge,
     gen_catlike_term
 )
-from pyzx.generate import cliffords
-from pyzx.simplify import full_reduce
+from my_pyzx.generate import cliffords
+from my_pyzx.simplify import full_reduce
 
 np: Optional[ModuleType]
 try:
